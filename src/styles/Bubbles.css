@@ -1,0 +1,79 @@
+.boxcontainer{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    bottom: 0;
+    padding: 1rem 0;
+}
+
+.box{
+    background-image: url("/Assets/snowflake.png");
+    background-position: center;
+    background-size: contain;
+    height: 2vh;
+    width: 1vw;
+    filter: brightness(2) drop-shadow(0 0 8px white);
+    animation: lightup 2s ease-in-out infinite;
+}
+
+@keyframes lightup {
+  0%   { filter: brightness(1) drop-shadow(0 0 3px rgba(255,255,255,0.3)); }
+  50%  { filter: brightness(1.6) drop-shadow(0 0 10px rgba(255,255,255,0.8)); }
+  100% { filter: brightness(1) drop-shadow(0 0 3px rgba(255,255,255,0.3)); }
+}
+
+
+.box:nth-child(1){
+    animation: slidedown 3.4s ease-out infinite;
+  }
+  .box:nth-child(2){
+    animation: slidedown 8.1s ease-out infinite;
+  }
+  .box:nth-child(3){
+    animation: slidedown 5.6s ease-out infinite;
+  }
+  .box:nth-child(4){
+    animation: slidedown 6.3s ease-out infinite;
+  }
+  .box:nth-child(5){
+    animation: slidedown 4.2s ease-out infinite;
+  }
+  .box:nth-child(6){
+    animation: slidedown 7.7s ease-out infinite;
+  }
+  .box:nth-child(7){
+    animation: slidedown 3.8s ease-out infinite;
+  }
+  .box:nth-child(8){
+    animation: slidedown 6.9s ease-out infinite;
+  }
+  .box:nth-child(9){
+    animation: slidedown 4.5s ease-out infinite;
+  }
+  .box:nth-child(10){
+    animation: slidedown 8.5s ease-out infinite;
+  }
+  .box:nth-child(11){
+    animation: slidedown 5.1s ease-out infinite;
+  }
+  .box:nth-child(12){
+    animation: slidedown 7.2s ease-out infinite;
+  }
+  .box:nth-child(13){
+    animation: slidedown 3.9s ease-out infinite;
+  }
+  
+  
+  
+@keyframes slidedown {
+    0%{
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+}   

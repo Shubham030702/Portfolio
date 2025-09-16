@@ -1,0 +1,19 @@
+.introduction{
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62vh;
+    width:  100vw;
+    position: relative;
+    flex-direction: column;
+    margin-top: 22vh;
+}
+
+.introcontent{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80vw;
+    color: #b0b0b0;
+    padding: 2vh;
+}
